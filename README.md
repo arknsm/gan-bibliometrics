@@ -15,3 +15,27 @@
 - 检索时间范围：2015–2025
 
 ### 项目目录结构
+gan-bibliometrics/
+├── data/
+│ ├── raw/ # 原始文献数据
+│ └── processed/ # 清洗后的数据
+├── src/ # 代码文件夹
+│ ├── data_clean.py # 数据清洗
+│ ├── analysis.py # 计量分析
+│ └── visualization.py # 可视化绘图
+├── outputs/ # 输出结果（图表、表格）
+├── reports/ # 报告文档（检索式、同义词表）
+├── paper/ # 论文 / 分析报告
+├── run_pipeline.py # 一键运行脚本
+├── requirements.txt # 依赖清单
+└── README.md # 项目说明
+## 环境依赖
+核心依赖：
+- `pandas>=2.0.0`：数据处理
+- `numpy>=1.24.0`：数值计算
+- `matplotlib>=3.7.0`：可视化
+- `pybliometrics>=3.0.0`：Scopus 数据获取
+
+## 运行方式
+```bash
+python run_pipeline.py
