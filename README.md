@@ -14,7 +14,6 @@
 - 检索时间范围：2010–2025
 - 检索字段包括：标题（Title）、摘要（Abstract）、作者关键词（Author Keywords）
 - 文献类型：Article + Review
-
 ### 检索策略
 采用如下布尔检索表达式构建数据集：
 (TS=("GaN" OR "gallium nitride"))
@@ -24,9 +23,9 @@ OR "power conversion" OR "power electronics" OR "switching"))
 NOT
 (TS=("LED" OR "light emitting" OR "laser" OR "optical" OR "photonics"))
 ### 检索策略说明
-材料限定：使用“GaN”与“gallium nitride”并列，避免命名差异导致遗漏。
-器件+应用双约束：引入 HEMT、power electronics 等关键词，将结果限定在功率器件与电力电子应用场景。
-排除项：剔除 LED、laser、photonics 等高频光电子文献，避免样本偏移。
+- 材料限定：使用“GaN”与“gallium nitride”并列，避免命名差异导致遗漏。
+- 器件+应用双约束：引入 HEMT、power electronics 等关键词，将结果限定在功率器件与电力电子应用场景。
+- 排除项：剔除 LED、laser、photonics 等高频光电子文献，避免样本偏移。
 
 ### 📊 数据获取与处理流程
 Step 1 — 数据检索
@@ -36,7 +35,7 @@ Step 1 — 数据检索
 Step 2 — 去重处理
 基于 DOI 进行主去重
 对缺失 DOI 的记录采用标题匹配去重
-去重后数据规模：N = XXXX（待补充）
+去重后数据规模：N =9825
 
 Step 3 — 数据标准化
 合并 Author Keywords（DE）与 Keywords Plus（ID）
